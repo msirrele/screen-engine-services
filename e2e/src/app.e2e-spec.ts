@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('sceen-engine-services app is running!');
+    expect(page.getTitleText()).toEqual('screen-engine-services app is running!');
   });
 
   afterEach(async () => {
