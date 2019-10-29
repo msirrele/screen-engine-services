@@ -1,0 +1,12 @@
+<mat-card
+  [style.borderTop]="'solid ' + bandColor + ' 5px'">
+  <mat-card-content
+    fxLayout="column"
+    fxLayoutAlign="space-between">
+    <p class="description">{{description}}</p>
+    <h1 class="number" *ngIf="!showSpinner">
+      <span [countUp]=number></span>
+      <span *ngIf="percentageSign">%</span>
+    </h1>
+  </mat-card-content>
+</mat-card>

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'sceen-engine-services'`, () => {
+  it(`should have as title 'screen-engine-services'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('sceen-engine-services');
+    expect(app.title).toEqual('screen-engine-services');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('sceen-engine-services app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('screen-engine-services app is running!');
   });
 });
