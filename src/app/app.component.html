@@ -1,4 +1,10 @@
 <div class="services-page-wrapper">
+<h3>TV Commercial Ratings</h3>
+<google-chart
+  [type]="chartType"
+  [data]="ratingsData"
+  [columnNames]="ratingsColumnNames">
+</google-chart>
   <h1>Screen Engine Services</h1>
   <div
     fxLayout="row wrap"
