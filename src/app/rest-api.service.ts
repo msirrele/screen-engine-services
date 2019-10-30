@@ -7,7 +7,7 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class RestApiService {
-  apiURL = 'http://localhost:3000';
+  apiURL = 'https://lb-screen-engine.appspot.com';
   constructor(private http: HttpClient) {}
   report;
   httpOptions = {
@@ -26,7 +26,7 @@ export class RestApiService {
   }
 
   getTvCommericalReportByGender() {
-   return this.getTvCommericalData();
+    return this.getTvCommericalData();
   }
 
   handleError(error) {
